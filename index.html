@@ -1,98 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="inflection">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Inflection Engineering</title>
-  <style>
-    body {
-      background-color: #0A1A2F; /* Deep navy background */
-      color: #1E90FF; /* Bright Yomly blue */
-      font-family: 'Helvetica Neue', sans-serif;
-      margin: 0;
-      padding: 0;
-    }
-
-    header {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding: 3rem 1rem 1rem;
-      text-align: center;
-    }
-
-    header img {
-      max-width: 280px;
-      height: auto;
-    }
-
-    h1 {
-      font-size: 2.25rem;
-      margin-top: 1.5rem;
-      color: #1E90FF;
-      font-weight: 500;
-    }
-
-    p {
-      font-size: 1.25rem;
-      max-width: 640px;
-      margin: 1.25rem auto;
-      line-height: 1.6;
-      color: #B0C4DE;
-    }
-
-    .section {
-      padding: 3rem 1rem;
-      text-align: center;
-    }
-
-    .cta {
-      background-color: #FFA33C;
-      color: #0A1A2F;
-      padding: 0.75rem 1.5rem;
-      border-radius: 6px;
-      font-weight: bold;
-      text-decoration: none;
-      display: inline-block;
-      margin-top: 2rem;
-      transition: background 0.3s ease;
-    }
-
-    .cta:hover {
-      background-color: #FFB95E;
-    }
-
-    footer {
-      text-align: center;
-      font-size: 0.9rem;
-      color: #4B6981;
-      padding: 2rem 1rem;
-    }
-  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inflection Engineering: Scale-up consultants</title>
 </head>
 <body>
+  <div class="hero min-h-screen">
+    <div class="hero-content text-center">
+      <div class="w-xl glass p-8 rounded-lg">
+        <a href="/">
+          <h1 class="flex justify-center items-center mb-8">
+            <img class="w-72 p-8" src="/assets/logo.png" alt="Inflection Engineering" />
+          </h1>
+        </a>
+        <main class="prose text-balance">
+          <p class="my-8">We help tech companies at inflection points — when the old ways stop working, but the new ones aren&apos;t clear yet.</p>
 
-  <header>
-    <img src="Inflection engineering logo.png" alt="Inflection Engineering logo" />
-    <h1>Engineering for the Moments That Matter</h1>
-    <p>We help tech companies at inflection points — when the old ways stop working, but the new ones aren’t clear yet.</p>
-  </header>
+          <p class="text-lg font-semibold text-neutral-content">
+            Engineering for the moments that matter
+          </p>
 
-  <section class="section">
-    <p>Growth brings pressure. Systems start to creak. Teams drift.</p>
+          <p class="my-8">Growth brings pressure. Systems start to creak. Teams drift.</p>
+          <p class="my-8">Leadership approaches that supported early growth often need to evolve to support scale.</p>
+          <p class="my-8">We step in when you're scaling faster than your structure — to help you recover the clarity and velocity you need.</p>
+          <p class="my-8">Sometimes it&apos;s about reliability. Sometimes it&apos;s hiring. Sometimes it&apos;s just having someone who&apos;s seen this before to work solutions out with.</p>
 
-    <p>Leadership approaches that supported early growth often need to evolve to support scale.</p>
+          <div class="flex items-center my-8 flex-col">
+            <div class="loading loading-infinity loading-xl"></div>
+          </div>
 
-    <p>We step in when you're scaling faster than your structure — to help you recover the clarity and velocity you need.</p>
+          <p class="my-8">Please bear with us while we expand this site. In the meanwhile, please…</p>
+        </main>
 
-    <p>Sometimes it’s about reliability. Sometimes it’s hiring. Sometimes it’s just having someone who’s seen this before to work solutions out with.</p>
-
-    <a href="mailto:hello@inflection.engineering" class="cta">It’s probably time to talk.</a>
-  </section>
-
-  <footer>
-    &copy; 2025 Inflection Engineering · All rights reserved
-  </footer>
-
+        <div class="flex mt-8 justify-center">
+          <a class="btn btn-soft btn-primary" href="mailto:hello@inflection.engineering?body=Hi%20folks,%0A%0A">Get in touch</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script type="module" src="/src/main.js"></script>
 </body>
 </html>

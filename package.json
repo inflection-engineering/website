@@ -1,0 +1,28 @@
+{
+  "name": "iota-data-products-site",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "Iota technology's website for downloading data products",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "clean": "rm -rf dist"
+  },
+  "author": "JP Hastings-Spital",
+  "license": "MIT",
+  "devDependencies": {
+    "@tailwindcss/typography": "^0.5.16",
+    "@tailwindcss/vite": "^4.1.8",
+    "autoprefixer": "^10.4.21",
+    "daisyui": "^5.0.43",
+    "tailwindcss": "^4.1.8",
+    "vite": "^6.3.5"
+  },
+  "packageManager": "pnpm@10.12.1",
+  "dependencies": {
+    "@nasaworldwind/worldwind": "^0.11.0",
+    "webworldwind-x": "^2.6.1"
+  }
+}
