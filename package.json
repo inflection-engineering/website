@@ -1,8 +1,6 @@
 {
-  "name": "iota-data-products-site",
   "type": "module",
   "version": "1.0.0",
-  "description": "Iota technology's website for downloading data products",
   "main": "index.js",
   "scripts": {
     "dev": "vite",
