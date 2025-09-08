@@ -36,7 +36,7 @@ jobs:
         run: pnpm exec playwright install --with-deps ${{ matrix.project }}
 
       - name: Run Playwright tests
-        run: playwright test --project=${{ matrix.project }} --reporter=json
+        run: pnpm exec playwright test --project=${{ matrix.project }} --reporter=json
         env:
           CI: true
           PLAYWRIGHT_JSON_OUTPUT_NAME: results.json
