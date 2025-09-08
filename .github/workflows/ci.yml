@@ -1,0 +1,59 @@
+name: CI
+
+on:
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  test:
+    name: Playwright Tests
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    permissions:
+      pull-requests: write
+      contents: read
+
+    env:
+      PLAYWRIGHT_RESULTS_FILE: results.json
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Install pnpm
+        uses: pnpm/action-setup@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version-file: "package.json"
+          cache: "pnpm"
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Install Playwright browsers
+        run: pnpm exec playwright install
+
+      - name: Run Playwright tests
+        run: pnpm exec playwright test --reporter=json
+        env:
+          CI: true
+          PLAYWRIGHT_JSON_OUTPUT_NAME: ${{ env.PLAYWRIGHT_RESULTS_FILE }}
+
+      - name: Upload test results
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: playwright-results-${{ github.run_id }}
+          path: test-results/
+          retention-days: 7
+
+      - name: Generate a report summary
+        uses: daun/playwright-report-summary@v3
+        if: always()
+        id: summary
+        with:
+          report-file: ${{ env.PLAYWRIGHT_RESULTS_FILE }}
