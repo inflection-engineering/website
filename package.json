@@ -2,11 +2,26 @@
   "type": "module",
   "version": "1.0.0",
   "main": "index.js",
+  "config": {
+    "css_in": "src/_styles/_main.css",
+    "css_out": "dist/assets/main.bundle.css",
+    "js_in": "src/_scripts/_main.ts",
+    "js_out": "dist/assets/main.bundle.js"
+  },
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview",
-    "clean": "rm -rf dist",
+    "build": "cross-env NODE_ENV=production npm-run-all -l clean lint -p build:*",
+    "build:html": "cross-env ELEVENTY_PRODUCTION=true eleventy",
+    "build:css": "tailwindcss -i $npm_package_config_css_in -o $npm_package_config_css_out --minify",
+    "build:js": "esbuild $npm_package_config_js_in --outfile=$npm_package_config_js_out --bundle --minify",
+    "build:test": "jest --coverage --passWithNoTests",
+    "dev": "npm-run-all -l clean -p dev:* -r",
+    "dev:html": "eleventy --quiet --serve",
+    "dev:css": "tailwindcss -i $npm_package_config_css_in -o $npm_package_config_css_out --watch",
+    "dev:js": "esbuild $npm_package_config_js_in --outfile=$npm_package_config_js_out --bundle --watch",
+    "dev:test": "jest --watch --passWithNoTests",
+    "preview": "eleventy --serve",
+    "clean": "rimraf ./dist",
+    "lint": "biome check .",
     "test": "playwright test",
     "test:ui": "playwright test --ui",
     "test:headed": "playwright test --headed",
@@ -14,23 +29,31 @@
   },
   "author": "JP Hastings-Spital",
   "license": "MIT",
+  "dependencies": {
+    "postcss": "^8.5.6"
+  },
   "devDependencies": {
+    "@11ty/eleventy": "^3.1.2",
     "@playwright/test": "^1.55.0",
+    "@tailwindcss/cli": "^4.1.13",
     "@tailwindcss/typography": "^0.5.16",
-    "@tailwindcss/vite": "^4.1.8",
     "@types/node": "^24.3.1",
     "autoprefixer": "^10.4.21",
+    "biome": "^0.3.3",
+    "cross-env": "^10.0.0",
     "daisyui": "^5.0.43",
+    "esbuild": "^0.25.9",
+    "jest": "^30.1.3",
+    "markdown-it": "^14.1.0",
+    "markdown-it-attrs": "^4.3.1",
+    "markdown-it-container": "^4.0.0",
+    "npm-run-all": "^4.1.5",
+    "playwright": "^1.55.0",
+    "rimraf": "^6.0.1",
     "tailwindcss": "^4.1.8",
-    "typescript": "^5.9.2",
-    "vite": "^6.3.5"
+    "typescript": "^5.9.2"
   },
   "packageManager": "pnpm@10.12.1",
-  "dependencies": {
-    "@nasaworldwind/worldwind": "^0.11.0",
-    "playwright": "^1.55.0",
-    "webworldwind-x": "^2.6.1"
-  },
   "engines": {
     "node": "^24.2"
   }
