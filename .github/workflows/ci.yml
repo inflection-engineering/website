@@ -59,9 +59,9 @@ jobs:
         id: summary
         with:
           report-file: results.json
-          create-comment: false
+      #     create-comment: false
 
-      - name: Post report summary to Github PR
-        uses: marocchino/sticky-pull-request-comment@v2
-        with:
-          message: ${{ steps.summary.outputs.summary }}
+      # - name: Post report summary to Github PR
+      #   uses: marocchino/sticky-pull-request-comment@v2
+      #   with:
+      #     message: ${{ steps.summary.outputs.summary }}
