@@ -1,0 +1,47 @@
+name: Teardown PR preview
+
+on:
+  pull_request:
+    types: [closed]
+
+jobs:
+  teardown:
+    name: Teardown preview site
+    runs-on: ubuntu-latest
+    if: github.event.pull_request.head.sha != ''
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Install Surge
+        run: npm install -g surge
+
+      - name: Teardown preview site
+        run: |
+          DEPLOYMENT_DOMAIN="inflection-engineering--$(echo ${{ github.event.pull_request.head.sha }} | cut -c1-7).surge.sh"
+          surge teardown "https://$DEPLOYMENT_DOMAIN"
+        env:
+          SURGE_LOGIN: ${{ vars.SURGE_LOGIN }}
+          SURGE_TOKEN: ${{ secrets.SURGE_TOKEN }}
+
+      - name: Update deployment status
+        uses: actions/github-script@v8
+        with:
+          script: |
+            const deployments = await github.rest.repos.listDeployments({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              ref: '${{ github.event.pull_request.head.sha }}',
+              environment: 'preview'
+            });
+
+            for (const deployment of deployments.data) {
+              await github.rest.repos.createDeploymentStatus({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                deployment_id: deployment.id,
+                state: 'inactive',
+                description: 'Preview site removed'
+              });
+            }

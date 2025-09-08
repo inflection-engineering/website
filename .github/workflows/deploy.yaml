@@ -1,4 +1,4 @@
-name: Deploy to Github Pages
+name: Deploy to Surge
 
 on:
   push:
@@ -35,6 +35,35 @@ jobs:
         with:
           path: dist
 
-      - name: Deploy to GitHub Pages
+      - name: Deploy to Surge
         id: deploy
-        uses: actions/deploy-pages@v4
+        run: |
+          DEPLOYMENT_DOMAIN="www.inflection.engineering"
+          echo "url=https://$DEPLOYMENT_DOMAIN" >> $GITHUB_OUTPUT
+          surge dist/ "$DEPLOYMENT_DOMAIN"
+
+        env:
+          SURGE_LOGIN: ${{ vars.SURGE_LOGIN }}
+          SURGE_TOKEN: ${{ secrets.SURGE_TOKEN }}
+
+      - name: Record deployment
+        uses: actions/github-script@v8
+        with:
+          script: |
+            const deployment = await github.rest.repos.createDeployment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              ref: context.sha,
+              environment: 'production',
+              description: 'Deploy to production',
+              auto_merge: false
+            });
+
+            await github.rest.repos.createDeploymentStatus({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              deployment_id: deployment.data.id,
+              state: 'success',
+              environment_url: '${{ steps.deploy.outputs.url }}',
+              description: 'Deployed production site'
+            });
