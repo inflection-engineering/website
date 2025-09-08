@@ -1,4 +1,4 @@
-name: Teardown PR preview
+name: Remove PR preview
 
 on:
   pull_request:
@@ -9,6 +9,9 @@ jobs:
     name: Teardown preview site
     runs-on: ubuntu-latest
     if: github.event.pull_request.head.sha != ''
+
+    permissions:
+      deployments: write
 
     steps:
       - name: Checkout code
