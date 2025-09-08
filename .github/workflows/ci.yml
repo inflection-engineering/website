@@ -39,6 +39,7 @@ jobs:
         run: pnpm run test --project=${{ matrix.project }} --reporter=github
         env:
           CI: true
+          PLAYWRIGHT_JSON_OUTPUT_NAME: results.json
 
       - name: Upload Playwright Report
         uses: actions/upload-artifact@v4
@@ -55,3 +56,14 @@ jobs:
           name: playwright-results-${{ matrix.project }}-${{ github.run_id }}
           path: test-results/
           retention-days: 7
+
+      - uses: daun/playwright-report-summary@v3
+        if: always()
+        id: summary
+        with:
+          report-file: results.json
+          create-comment: false
+
+      - uses: marocchino/sticky-pull-request-comment@v2
+        with:
+          message: ${{ steps.summary.outputs.summary }}
