@@ -28,6 +28,7 @@
   "packageManager": "pnpm@10.12.1",
   "dependencies": {
     "@nasaworldwind/worldwind": "^0.11.0",
+    "playwright": "^1.55.0",
     "webworldwind-x": "^2.6.1"
   },
   "engines": {
