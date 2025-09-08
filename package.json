@@ -29,5 +29,8 @@
   "dependencies": {
     "@nasaworldwind/worldwind": "^0.11.0",
     "webworldwind-x": "^2.6.1"
+  },
+  "engines": {
+    "node": "^24.2"
   }
 }

@@ -4,6 +4,19 @@ This is the source of our website at [inflection.engineering](https://www.inflec
 
 ## Developing
 
+Install [fnm](https://github.com/Schniz/fnm#readme), the fast node manager:
+
+```bash
+# Install with homebrew
+brew install fnm
+
+# Load into your environment; this can be added to your `.zshrc` or equivalent
+eval "$(fnm env --use-on-cd --shell zsh)"
+
+# Switch to the appropriate node version
+fnm use
+```
+
 Install `pnpm` if you haven't already:
 
 ```bash
