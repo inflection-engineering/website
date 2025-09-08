@@ -9,7 +9,11 @@ jobs:
   test:
     name: Playwright Tests
     runs-on: ubuntu-latest
-    timeout-minutes: 5
+    timeout-minutes: 10
+
+    permissions:
+      pull-requests: write
+      contents: read
 
     strategy:
       fail-fast: false
