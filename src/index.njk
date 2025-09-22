@@ -3,7 +3,7 @@ layout: base.njk
 ---
 
 <!-- Hero Section -->
-<div class="hero min-h-screen bg-gradient-to-b from-primary/50 to-bg">
+<div class="hero p-32 bg-gradient-to-b from-primary/50 to-bg">
   <div class="hero-content text-center text-balance">
     <div class="max-w-md">
       <img src="/assets/logo.png" alt="Inflection Engineering" class="w-80 mx-auto object-contain m-4"/>
@@ -38,5 +38,5 @@ layout: base.njk
 </section>
 <!-- Footer -->
 <footer class="footer footer-center p-10 text-base-content">
-  Inflection Engineering &copy; 2025
+  <p class="text-base-content/45">Inflection Engineering &copy; 2024-{{ "now" | date("YYYY") }}</p>
 </div></footer>
