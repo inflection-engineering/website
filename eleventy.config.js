@@ -93,6 +93,15 @@ export default function(eleventyConfig) {
       day: 'numeric'
     });
   });
+
+  // Add date filter for current year
+  eleventyConfig.addFilter("date", function(date, format) {
+    const d = date === "now" ? new Date() : new Date(date);
+    if (format === "YYYY") {
+      return d.getFullYear();
+    }
+    return d;
+  });
   
   // Add limit filter for arrays
   eleventyConfig.addFilter("limit", function(array, limit) {
