@@ -21,7 +21,7 @@ layout: base.njk
 <section class="py-16 w-full">
   <div class="carousel carousel-center w-full gap-[20%]">
     {% for item in collections.homepageCarousel %}
-      <div id="{{ item.fileSlug }}" class="carousel-item relative w-3/4 card rounded-lg bg-primary/25 {% if loop.first %}ms-[20%]{% endif %}{% if loop.last %} me-[20%]{% endif %}">
+      <div id="{{ item.fileSlug | removeNumberPrefix }}" class="carousel-item relative w-3/4 card rounded-lg bg-primary/25 {% if loop.first %}ms-[20%]{% endif %}{% if loop.last %} me-[20%]{% endif %}">
         <div class="card-body text-base flex-none">
           <h3 class="card-title mt-0 mb-4">{{ item.data.title }}</h3>
           {{ item.content | safe }}
@@ -31,7 +31,7 @@ layout: base.njk
   </div>
   <div class="flex w-full justify-center gap-4 py-4">
     {% for item in collections.homepageCarousel %}
-      <a href="#{{ item.fileSlug }}" class="btn btn-xs">{{ item.data.title }}</a>
+      <a href="#{{ item.fileSlug | removeNumberPrefix }}" class="btn btn-xs">{{ item.data.title }}</a>
     {% endfor %}
   </div>
 </section>

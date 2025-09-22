@@ -1,6 +1,7 @@
 import markdownIt from "markdown-it";
 import markdownItAttrs from "markdown-it-attrs";
 import markdownItContainer from "markdown-it-container";
+import markdownItAnchor from "markdown-it-anchor";
 
 export default function(eleventyConfig) {
   // Copy static assets
@@ -15,6 +16,7 @@ export default function(eleventyConfig) {
     breaks: true,
     linkify: true
   }).use(markdownItAttrs)
+    .use(markdownItAnchor)
     .use(markdownItContainer, 'info')
     .use(markdownItContainer, 'warning')
     .use(markdownItContainer, 'success');
@@ -23,6 +25,11 @@ export default function(eleventyConfig) {
   markdownLib.renderer.rules.heading_open = function (tokens, idx) {
     const token = tokens[idx];
     const level = token.tag;
+
+    // Get existing id attribute if it exists (from markdown-it-anchor)
+    const idAttr = token.attrGet('id');
+    const idAttribute = idAttr ? ` id="${idAttr}"` : '';
+
     const classes = {
       h1: 'text-4xl font-bold mb-6 mt-8 text-base-content',
       h2: 'text-3xl font-bold mb-4 mt-8 text-base-content',
@@ -31,7 +38,7 @@ export default function(eleventyConfig) {
       h5: 'text-lg font-bold mb-2 mt-3 text-base-content',
       h6: 'text-md font-bold mb-2 mt-2 text-base-content'
     };
-    return `<${level} class="${classes[level] || ''}">`;
+    return `<${level}${idAttribute} class="${classes[level] || ''}">`;
   };
   
   markdownLib.renderer.rules.paragraph_open = function () {
@@ -92,6 +99,11 @@ export default function(eleventyConfig) {
   // Add limit filter for arrays
   eleventyConfig.addFilter("limit", function(array, limit) {
     return array.slice(0, limit);
+  });
+
+  // Remove numeric prefix from slugs
+  eleventyConfig.addFilter("removeNumberPrefix", function(slug) {
+    return slug.replace(/^\d+-/, '');
   });
   
   return {
