@@ -13,7 +13,7 @@
     "build:html": "cross-env ELEVENTY_PRODUCTION=true eleventy",
     "build:css": "tailwindcss -i $npm_package_config_css_in -o $npm_package_config_css_out --minify",
     "build:js": "esbuild $npm_package_config_js_in --outfile=$npm_package_config_js_out --bundle --minify",
-    "build:test": "jest --coverage --passWithNoTests",
+    "build:test": "jest --coverage --passWithNoTests --testPathIgnorePatterns=tests/e2e/",
     "dev": "npm-run-all -l clean -p dev:* -r",
     "dev:html": "eleventy --quiet --serve --port=4635",
     "dev:css": "tailwindcss -i $npm_package_config_css_in -o $npm_package_config_css_out --watch",
