@@ -45,3 +45,7 @@ body {
 mark {
   @apply bg-transparent text-accent/90;
 }
+
+.img-right {
+  @apply rounded-lg my-8 sm:float-right sm:my-0 sm:ms-8 w-full sm:max-w-2/5
+}

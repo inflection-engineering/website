@@ -6,13 +6,13 @@ layout: case-study.njk
 
 ## Context
 
-![Context](https://picsum.photos/seed/context/600/400/){.float-right}
+![Context](https://picsum.photos/seed/context/600/400/){.img-right}
 
 The company’s  50+ product teams could explain features with business cases and metrics, but reliability work was invisible. Product leaders lacked a way to show impact, so incidents recurred and board questions grew about whether the organisation had maturity to manage stability. The whole org needed a consistent pattern for when reliability must take priority.
 
 ## Approach
 
-![Approach](https://picsum.photos/seed/approach/600/400/){.float-left}
+![Approach](https://picsum.photos/seed/approach/600/400/){.img-right}
 
 JP reframed the narrative around incidents and repair items. Instead of abstract “tech debt,” the framework tied them back to the teams at their root — and to the customer impact they created. When metrics crossed set thresholds, a team moved into **Focus** (50% recovery). If issues persisted, they entered **Hyperfocus** (100% recovery). Teams now had predictable shifts, triggered by their own data and grounded in customer experience rather than debate.
 
@@ -20,15 +20,13 @@ To make it stick, JP tested early drafts with leaders and senior ICs. Rough vers
 
 ## Delivery
 
-![Delivery](https://picsum.photos/seed/delivery/600/400/){.float-right}
+![Delivery](https://picsum.photos/seed/delivery/600/400/){.img-right}
 
 Rolling it out to ~1,800 people meant more than publishing rules. JP co-presented with leaders at all-hands for top-down legitimacy, while speaking with IC credibility to resonate with engineers. Hyperfocus was framed as breathing space to fix issues, paired with the accountability of asking, “did you need this to happen to see it coming?” The framework was embedded into weekly reviews and all-hands, making transitions visible and reinforcing success when teams exited Hyperfocus.
 
 ## Outcome
 
-![Outcome](https://picsum.photos/seed/outcome/600/400/){.float-left}
-
-Reliability gained parity with features — same weight, same language.
+Reliability gained parity with features - same weight, same language.
 
 Shared triggers cut debate; incidents fell and triage sharpened.
 

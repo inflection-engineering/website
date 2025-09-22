@@ -15,10 +15,12 @@ layout: base.njk
 </div>
 {{ content | safe }}
 <!-- Footer -->
-<footer class="footer footer-center p-10 text-base-content">
-  <div class="text-center">
-    <img src="/assets/logo.png" alt="Inflection Engineering" class="h-12 mx-auto mb-4"/>
-    <p class="text-base-content/75">Helping CTOs adapt faster, when it matters most.</p>
-    <p class="text-base-content/50">Inflection Engineering &copy; 2024-{{ "now" | date("YYYY") }}</p>
+<footer class="footer footer-center p-10 text-base-content bg-gradient-to-b from-primary/20 to-base ">
+  <div class="flex items-center justify-between gap-4">
+    <img src="/assets/logo.png" alt="Inflection Engineering" class="h-12"/>
+    <div class="text-left">
+      <p class="text-base-content/75">Helping CTOs adapt faster, when it matters most.</p>
+      <p class="text-base-content/25">Inflection Engineering &copy; 2024-{{ "now" | date("YYYY") }}</p>
+    </div>
   </div>
 </footer>
