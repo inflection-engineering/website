@@ -1,7 +1,6 @@
 import markdownIt from "markdown-it";
 import markdownItAttrs from "markdown-it-attrs";
 import markdownItContainer from "markdown-it-container";
-import markdownItAnchor from "markdown-it-anchor";
 
 export default function(eleventyConfig) {
   // Copy static assets
@@ -16,7 +15,6 @@ export default function(eleventyConfig) {
     breaks: true,
     linkify: true
   }).use(markdownItAttrs)
-    .use(markdownItAnchor)
     .use(markdownItContainer, 'info')
     .use(markdownItContainer, 'warning')
     .use(markdownItContainer, 'success');
