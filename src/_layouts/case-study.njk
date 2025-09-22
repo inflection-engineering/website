@@ -1,83 +1,56 @@
-<!DOCTYPE html>
-<html lang="en" class="scroll-smooth" data-theme="inflection">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>
-            {% if title %}
-                {{ title }} —
-            {% endif %}Inflection Engineering</title>
-        {% if description %}
-        <meta name="description" content="{{ description }}">
-        {% endif %}
-        <meta name="theme-color" content="#000e1e"/>
-        <link rel="stylesheet" href="/assets/main.bundle.css">
-        <script src="/assets/main.bundle.js" defer></script>
-    </head>
-    <body class="bg-base-100">
-        <!-- Navigation/Header -->
-        <div class="navbar bg-base-100 border-b border-base-300">
-            <div class="navbar-start">
-                <a href="/" class="btn btn-ghost text-xl">
-                    <img src="/assets/logo.png" alt="Inflection Engineering" class="h-8">
-                </a>
+---
+layout: with-navbar.njk
+---
+
+<div class="hero bg-gradient-to-b from-primary/10 to-base-100 py-16">
+    <div class="hero-content text-center">
+        <div class="max-w-4xl">
+            <div class="breadcrumbs text-sm mb-4">
+                <ul>
+                    <li>
+                        <a href="/">Home</a>
+                    </li>
+                    <li>
+                        <a href="/case-studies/">Case Studies</a>
+                    </li>
+                    <li>{{ title }}</li>
+                </ul>
             </div>
-            <div class="navbar-end">
-                <a href="/#who-we-are" class="btn btn-ghost">About</a>
-                <a href="/#how-we-help" class="btn btn-ghost">Services</a>
-                <a href="mailto:hello@inflection.engineering" class="btn btn-primary">Contact</a>
+            <h1 class="text-5xl font-bold mb-4 text-base-content">{{ title }}</h1>
+            {% if description %}
+                <p class="text-xl text-base-content/80 max-w-2xl mx-auto">{{ description }}</p>
+            {% endif %}
+            <!-- Metadata badges -->
+            <div class="flex flex-wrap justify-center gap-2 mt-6">
+                {% if client %}
+                    <div class="badge badge-primary badge-lg">{{ client }}</div>
+                {% endif %}
+                {% if industry %}
+                    <div class="badge badge-secondary badge-lg">{{ industry }}</div>
+                {% endif %}
+                {% if challenge %}
+                    <div class="badge badge-accent badge-lg">{{ challenge }}</div>
+                {% endif %}
+                {% if date %}
+                    <div class="badge badge-neutral badge-lg">{{ date | dateDisplay }}</div>
+                {% endif %}
             </div>
         </div>
-
-        <!-- Case Study Header -->
-        <div class="hero bg-gradient-to-b from-primary/10 to-base-100 py-16">
-            <div class="hero-content text-center">
-                <div class="max-w-4xl">
-                    <div class="breadcrumbs text-sm mb-4">
-                        <ul>
-                            <li><a href="/">Home</a></li>
-                            <li><a href="/case-studies/">Case Studies</a></li>
-                            <li>{{ title }}</li>
-                        </ul>
-                    </div>
-                    <h1 class="text-5xl font-bold mb-4 text-base-content">{{ title }}</h1>
-                    {% if description %}
-                    <p class="text-xl text-base-content/80 max-w-2xl mx-auto">{{ description }}</p>
-                    {% endif %}
-                    
-                    <!-- Metadata badges -->
-                    <div class="flex flex-wrap justify-center gap-2 mt-6">
-                        {% if client %}
-                        <div class="badge badge-primary badge-lg">{{ client }}</div>
-                        {% endif %}
-                        {% if industry %}
-                        <div class="badge badge-secondary badge-lg">{{ industry }}</div>
-                        {% endif %}
-                        {% if challenge %}
-                        <div class="badge badge-accent badge-lg">{{ challenge }}</div>
-                        {% endif %}
-                        {% if date %}
-                        <div class="badge badge-neutral badge-lg">{{ date | dateDisplay }}</div>
-                        {% endif %}
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Case Study Content -->
-        <div class="container mx-auto max-w-4xl px-4 py-8">
-            <div class="prose prose-lg max-w-none">
-                {{ content | safe }}
-            </div>
-        </div>
-
-        <!-- Related Case Studies -->
-        <div class="bg-base-200 py-16">
-            <div class="container mx-auto max-w-6xl px-4">
-                <h2 class="text-3xl font-bold text-center mb-12">More Case Studies</h2>
-                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                    {% for study in collections.caseStudies | limit(3) %}
-                    {% if study.url != page.url %}
+    </div>
+</div>
+<!-- Case Study Content -->
+<div class="container mx-auto max-w-4xl px-4 py-8">
+    <div class="prose prose-lg max-w-none">
+        {{ content | safe }}
+    </div>
+</div>
+<!-- Related Case Studies -->
+<div class="bg-base-200 py-16">
+    <div class="container mx-auto max-w-6xl px-4">
+        <h2 class="text-3xl font-bold text-center mb-12">More Case Studies</h2>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {% for study in collections.caseStudies | limit(3) %}
+                {% if study.url != page.url %}
                     <div class="card bg-base-100 shadow-lg">
                         <div class="card-body">
                             <h3 class="card-title text-lg">{{ study.data.title }}</h3>
@@ -88,34 +61,22 @@
                             </div>
                         </div>
                     </div>
-                    {% endif %}
-                    {% endfor %}
-                </div>
-            </div>
+                {% endif %}
+            {% endfor %}
         </div>
-
-        <!-- CTA Section -->
-        <div class="hero bg-gradient-to-b from-primary/20 to-base-100 py-16">
-            <div class="hero-content text-center">
-                <div class="max-w-2xl">
-                    <h2 class="text-3xl font-bold mb-4">Ready to Transform Your Business?</h2>
-                    <p class="text-lg text-base-content/80 mb-6">
-                        Let's discuss how we can help solve your unique challenges and accelerate your growth.
-                    </p>
-                    <a href="mailto:hello@inflection.engineering?subject=Case%20Study%20Inquiry" class="btn btn-primary btn-lg">
-                        Start Your Journey
-                    </a>
-                </div>
-            </div>
+    </div>
+</div>
+<!-- CTA Section -->
+<div class="hero bg-gradient-to-b from-primary/20 to-base-100 py-16">
+    <div class="hero-content text-center">
+        <div class="max-w-2xl">
+            <h2 class="text-3xl font-bold mb-4">Ready to Transform Your Business?</h2>
+            <p class="text-lg text-base-content/80 mb-6">
+                Let's discuss how we can help solve your unique challenges and accelerate your growth.
+            </p>
+            <a href="mailto:hello@inflection.engineering?subject=Case%20Study%20Inquiry" class="btn btn-primary btn-lg">
+                Start Your Journey
+            </a>
         </div>
-
-        <!-- Footer -->
-        <footer class="footer footer-center p-10 text-base-content">
-            <div class="text-center">
-                <img src="/assets/logo.png" alt="Inflection Engineering" class="h-12 mx-auto mb-4">
-                <p>Inflection Engineering &copy; 2025</p>
-                <p class="text-base-content/60">Helping CTOs adapt faster, when it matters most.</p>
-            </div>
-        </footer>
-    </body>
-</html>
+    </div>
+</div>

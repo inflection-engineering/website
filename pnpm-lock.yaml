@@ -37,8 +37,8 @@ importers:
         specifier: ^10.0.0
         version: 10.0.0
       daisyui:
-        specifier: ^5.0.43
-        version: 5.0.43
+        specifier: ^5.1.14
+        version: 5.1.14
       esbuild:
         specifier: ^0.25.9
         version: 0.25.9
@@ -1246,8 +1246,8 @@ packages:
     engines: {node: '>=4'}
     hasBin: true
 
-  daisyui@5.0.43:
-    resolution: {integrity: sha512-2pshHJ73vetSpsbAyaOncGnNYL0mwvgseS1EWy1I9Qpw8D11OuBoDNIWrPIME4UFcq2xuff3A9x+eXbuFR9fUQ==}
+  daisyui@5.1.14:
+    resolution: {integrity: sha512-c9Op7tB8vLzzazFaLeyFsmmVMLrU8sYo1sHuStBGTbaAzLVxrulelGQBROo/lS2ZxWm/CnCb9NWdKbTL+MaKFA==}
 
   dashdash@1.14.1:
     resolution: {integrity: sha512-jRFi8UDGo6j+odZiEpjazZaWqEal3w/basFjQHQEwVtZJGDpxbH1MeYluwCS8Xq5wmLJooDlMgvVarmWfGM44g==}
@@ -4425,7 +4425,7 @@ snapshots:
 
   cssesc@3.0.0: {}
 
-  daisyui@5.0.43: {}
+  daisyui@5.1.14: {}
 
   dashdash@1.14.1:
     dependencies:
