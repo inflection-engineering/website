@@ -4,7 +4,7 @@ layout: case-study.njk
 # Accelerating hiring 
 
 ## Context 
-![Context](https://picsum.photos/seed/context/600/400/){.img-right}
+![Context](/assets/Context.png){.img-right}
 
 A SaaS scale-up needed to grow fast. Leadership knew the hires they needed, but hiring was ad-hoc, interviewers were few, and no real process existed. With a fixed budget, every decision mattered.
 
@@ -12,7 +12,7 @@ They didn’t need recruiters — they needed a trusted partner who worked as th
 
 
 ## Alignment
-![Alignment](https://picsum.photos/seed/approach/600/400/){.img-right}
+![Alignment](/assets/Approach.png){.img-right}
 
 We anchored workshops around three hard questions:
 
@@ -22,24 +22,27 @@ We anchored workshops around three hard questions:
 * **How will we choose?** Interview framework, rigour, decisions, capacity.
 
 Once agreed, we acted autonomously — updating only at key decision points while iterating the plan as new market data arrived
-**Visual**:
 
-![Delivery](https://picsum.photos/seed/approach/600/400/){.img-right}
+![Delivery](/assets/Delivery.png){.img-right}
 
-- **Boots on the ground.** We started hiring immediately — building pipelines, talking to candidates, interviewing ourselves. Senior hires landed early, boosting capacity and proving the model. AI note-taking cut admin while raising accountability.
-- **Framework.** Alongside execution, we stood up the basics: job descriptions, interview loops, scripts, rubrics, and debriefs. Lightweight but predictable, designed to train others.
-- **Leave a working solution.** We trained staff and new senior hires to become interviewers, coached evidence-based interviewing, and transitioned ownership to in-house recruiting so the system would persist.
+\- **Boots on the ground.** We started hiring immediately — building pipelines, talking to candidates, interviewing ourselves. Senior hires landed early, boosting capacity and proving the model. AI note-taking cut admin while raising accountability.
+\- **Framework.** Alongside execution, we stood up the basics: job descriptions, interview loops, scripts, rubrics, and debriefs. Lightweight but predictable, designed to train others.
+\- **Leave a working solution.** We trained staff and new senior hires to become interviewers, coached evidence-based interviewing, and transitioned ownership to in-house recruiting so the system would persist.
 
-**Visual**:
 
-![Outcomes](https://picsum.photos/seed/context/600/400/){.img-left}
+![Outcomes](/assets/Outcome.png){.img-left}
 
-- ~85% of roles hired or under offer.
-- 400 candidates reviewed, >150 screened, 8+ perm hires made, 1 offer open.
-- Contractors added for critical gaps (SWE, SRE, recruiting).
-- *A trained interviewer pool, leadership hires to run loops, and in-house recruiting capacity established.*
-- A working hiring engine that leaders could trust to keep scaling.
+\- ~85% of roles hired or under offer.
+\- 400 candidates reviewed, >150 screened, 8+ perm hires made, 1 offer open.
+\- Contractors added for critical gaps (SWE, SRE, recruiting).
+\- *A trained interviewer pool, leadership hires to run loops, and in-house recruiting capacity established.*
+\- A working hiring engine that leaders could trust to keep scaling.
 
-**Visual**:
+![Outcomes](/assets/Outcome.png){.img-right}
 
-(*) at time of writing.
+\- ~85% of roles hired or under offer.
+\- 400 candidates reviewed, >150 screened, 8+ perm hires made, 1 offer open.
+\- Contractors added for critical gaps (SWE, SRE, recruiting).
+\- *A trained interviewer pool, leadership hires to run loops, and in-house recruiting capacity established.*
+\- A working hiring engine that leaders could trust to keep scaling.
+
