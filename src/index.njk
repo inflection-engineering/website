@@ -11,7 +11,10 @@ layout: base.njk
       <p class="mt-12">We help scale-ups adapt faster when success starts to slow them down. You're already in the race of
         your life — we're the boost that gets you back on track.</p>
       <div class="mt-12">
-        <a class="btn btn-soft btn-primary" href="mailto:hello@inflection.engineering?body=Hi%20folks,%0A%0A">Get in touch</a>
+        <a
+          class="btn btn-soft btn-accent"
+          href="mailto:hello@inflection.engineering?body=Hi%20folks,%0A%0A"
+          onclick="get_in_touch.showModal(); event.preventDefault();">Get in touch</a>
         <a class="btn btn-ghost" href="#why-us">Learn more ↓</a>
       </div>
     </div>
@@ -36,6 +39,7 @@ layout: base.njk
     {% endfor %}
   </div>
 </section>
+{% include "get_in_touch.njk" %}
 <!-- Footer -->
 <footer class="footer footer-center p-10 text-base-content">
   <p class="text-base-content/45">Inflection Engineering &copy; 2024-{{ "now" | date("YYYY") }}</p>

@@ -10,10 +10,11 @@ layout: base.njk
   </div>
   <div class="navbar-end">
     <a href="/#why-us" class="btn btn-ghost">Why us?</a>
-    <a href="/case-studies/" class="btn btn-ghost btn-soft">Case studies</a>
+    <a href="#" onclick="get_in_touch.showModal()" class="btn btn-accent btn-soft">Get in touch</a>
   </div>
 </div>
 {{ content | safe }}
+{% include "get_in_touch.njk" %}
 <!-- Footer -->
 <footer class="footer footer-center p-10 text-base-content bg-gradient-to-b from-primary/20 to-base ">
   <div class="flex items-center justify-between gap-4">
