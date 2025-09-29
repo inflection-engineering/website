@@ -2,13 +2,15 @@
 layout: case-study.njk
 ---
 
-# Hyperfocus
+# Hyperfocus { .mb-16 }
 
 ## Context
 
 ![Context](https://picsum.photos/seed/context/600/400/){.img-right}
 
 The company’s  50+ product teams could explain features with business cases and metrics, but reliability work was invisible. Product leaders lacked a way to show impact, so incidents recurred and board questions grew about whether the organisation had maturity to manage stability. The whole org needed a consistent pattern for when reliability must take priority.
+
+---
 
 ## Approach
 
@@ -18,11 +20,15 @@ JP reframed the narrative around incidents and repair items. Instead of abstract
 
 To make it stick, JP tested early drafts with leaders and senior ICs. Rough versions encouraged feedback and co-ownership. Language was tuned until it worked in both boardrooms and engineering forums. By rollout, leaders saw clarity, engineers saw credibility, and the framework was ready to scale.
 
+---
+
 ## Delivery
 
 ![Delivery](https://picsum.photos/seed/delivery/600/400/){.img-right}
 
 Rolling it out to ~1,800 people meant more than publishing rules. JP co-presented with leaders at all-hands for top-down legitimacy, while speaking with IC credibility to resonate with engineers. Hyperfocus was framed as breathing space to fix issues, paired with the accountability of asking, “did you need this to happen to see it coming?” The framework was embedded into weekly reviews and all-hands, making transitions visible and reinforcing success when teams exited Hyperfocus.
+
+---
 
 ## Outcome
 

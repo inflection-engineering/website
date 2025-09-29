@@ -1,6 +1,7 @@
 import markdownIt from "markdown-it";
 import markdownItAttrs from "markdown-it-attrs";
 import markdownItContainer from "markdown-it-container";
+import { twMerge } from 'tailwind-merge';
 
 export default function(eleventyConfig) {
   // Copy static assets
@@ -24,19 +25,26 @@ export default function(eleventyConfig) {
     const token = tokens[idx];
     const level = token.tag;
 
-    // Get existing id attribute if it exists (from markdown-it-anchor)
+    // Get existing id and class attributes
     const idAttr = token.attrGet('id');
+    const classAttr = token.attrGet('class');
     const idAttribute = idAttr ? ` id="${idAttr}"` : '';
 
-    const classes = {
-      h1: 'text-4xl font-bold mb-6 mt-8 text-base-content',
-      h2: 'text-3xl font-bold mb-4 mt-8 text-base-content',
-      h3: 'text-2xl font-bold mb-3 mt-6 text-base-content',
-      h4: 'text-xl font-bold mb-2 mt-4 text-base-content',
-      h5: 'text-lg font-bold mb-2 mt-3 text-base-content',
-      h6: 'text-md font-bold mb-2 mt-2 text-base-content'
+    const defaultClasses = {
+      h1: 'text-4xl mb-6 mt-8',
+      h2: 'text-3xl mb-4 mt-8',
+      h3: 'text-2xl mb-3 mt-6',
+      h4: 'text-xl mb-2 mt-4',
+      h5: 'text-lg mb-2 mt-3',
+      h6: 'text-md mb-2 mt-2'
     };
-    return `<${level}${idAttribute} class="${classes[level] || ''}">`;
+
+    const allClasses = twMerge(
+      'font-bold text-base-content',
+      defaultClasses[level],
+      classAttr
+    );
+    return `<${level}${idAttribute} class="${allClasses}">`;
   };
   
   markdownLib.renderer.rules.paragraph_open = function () {
@@ -56,7 +64,7 @@ export default function(eleventyConfig) {
   };
   
   markdownLib.renderer.rules.hr = function () {
-    return '<hr class="my-8 border-base-300">';
+    return '<hr class="my-24 w-4 mx-auto border-base-100">';
   };
   
   markdownLib.renderer.rules.code_inline = function (tokens, idx) {

@@ -4,6 +4,8 @@ import daisyui from "daisyui";
 export default {
   content: [
     "./src/**/*.{njk,md}",
+    "./eleventy.config.js"
+    
   ],
   theme: {
     extend: {}
