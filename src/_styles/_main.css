@@ -50,5 +50,5 @@ mark {
 }
 
 .img-right {
-  @apply rounded-lg my-8 sm:float-right sm:my-0 sm:ms-8 w-full sm:max-w-2/5
+  @apply rounded-lg float-right my-4 ms-8 sm:max-w-1/6 w-24 max-w-1/4
 }
