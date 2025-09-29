@@ -1,9 +1,10 @@
 ---
 layout: case-study.njk
+title: Accelerating hiring
+summary: Built a complete hiring engine from scratch, delivering 85% of roles while training the team to scale autonomously. 
 ---
-# Accelerating hiring { .mb-16 }
 
-## Context 
+## Context
 
 ![Context](/assets/context.svg){.icon-right}
 

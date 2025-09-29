@@ -1,7 +1,8 @@
 ---
 layout: case-study.njk
+title: Difficult migration
+summary: Orchestrated a zero-downtime big-bang Kafka migration across 40+ teams that even the cloud provider adopted as their playbook. 
 ---
-# A Difficult migration { .mb-16 }
 
 ## Context
 

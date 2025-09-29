@@ -89,6 +89,10 @@ export default function(eleventyConfig) {
     return collectionApi.getFilteredByGlob("src/case-studies/*.md").sort(temporally);
   });
 
+  eleventyConfig.addCollection("pages", function(collectionApi) {
+    return collectionApi.getFilteredByGlob("src/pages/*.md").sort(temporally);
+  });
+
   eleventyConfig.addCollection("homepageCarousel", function(collectionApi) {
     return collectionApi.getFilteredByGlob("src/homepage-carousel/*.md").sort(bySlug);
   });

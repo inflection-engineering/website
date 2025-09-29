@@ -1,7 +1,8 @@
 ---
 layout: case-study.njk
+title: Why us?
 ---
-# Why us? { .mb-16 }
+
 
 ## We've done this before
 

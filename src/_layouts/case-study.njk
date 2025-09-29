@@ -3,6 +3,7 @@ layout: with-navbar.njk
 ---
 
 <div class="container mx-auto max-w-4xl px-4 py-8">
+    <h1 class="text-5xl mt-8 mb-24 font-bold text-base-content">{{ title }}</h1>
     <div class="prose prose-lg max-w-none">
         {{ content | safe }}
     </div>
@@ -13,9 +14,7 @@ layout: with-navbar.njk
         <div class="max-w-2xl">
             <h2 class="text-3xl font-bold mb-4">Still got questions?</h2>
             <p class="text-lg text-base-content/80 mb-6">
-                You read this far —
-                <em>something</em>
-                is interesting you — let's talk it through.
+                You read this far — what caught your eye? Let's talk it through.
             </p>
             <a
                 class="btn btn-accent"
@@ -34,10 +33,9 @@ layout: with-navbar.njk
                     <div class="card bg-base-100 shadow-lg">
                         <div class="card-body">
                             <h3 class="card-title text-lg">{{ study.data.title }}</h3>
-                            <p class="text-sm text-base-content/70 mb-2">{{ study.data.client }} • {{ study.data.industry }}</p>
-                            <p class="text-base-content/80 line-clamp-3">{{ study.data.description }}</p>
+                            <p class="text-base-content/80 line-clamp-3">{{ study.data.summary }}</p>
                             <div class="card-actions justify-end mt-4">
-                                <a href="{{ study.url }}" class="btn btn-primary btn-sm">Read Case Study</a>
+                                <a href="{{ study.url }}" class="btn btn-primary btn-sm">Read more &raquo;</a>
                             </div>
                         </div>
                     </div>
