@@ -30,11 +30,11 @@ Along the way he learned how to adjust his style to each phase: from principal e
 
 ![Mike](/assets/mike.png){.img-right}
 
-Mike brings an infrastructure-first lens shaped by decades of scale-up leadership. He built Demon Internet, the UK’s first consumer ISP; turned Redbus Interhouse from a spreadsheet into a funded business that revolutionised the UK data centre market; steered companies through acquisitions; navigated sales, funding rounds and multiple IPOs. 
+Mike brings an infrastructure-first lens shaped by decades of scale-up leadership. He built Demon Internet, the UK’s first consumer ISP; turned Redbus Interhouse from a spreadsheet into a funded business that revolutionised the UK data centre market; steered companies through acquisitions; navigated sales, funding rounds and multiple IPOs.  Mike has told the board it was time, and closed the doors. 
 
-Mike has told the board it was time, and closed the doors. He’s led teams owning key tools in the security and developer workflows ensuring they performed at Facebook scale, and has persuaded start-up engineers to go on call for the first time — ill-prepared and nervous, but confident because he had their back. 
+He’s led teams owning key tools in the security and developer workflows ensuring they performed at Facebook scale, and has persuaded start-up engineers to go on call for the first time — ill-prepared and nervous, but confident because he had their back. 
 
-He knows what it looks like to run a scrappy start-up, a high-growth scale-up, and a global tech giant — and what it takes to keep systems reliable when complexity becomes the beast in the room.
+Mike knows what it looks like to run a scrappy start-up, a high-growth scale-up, and a global tech giant — and what it takes to keep systems reliable when complexity becomes the beast in the room.
 
 ---
 
@@ -42,8 +42,8 @@ He knows what it looks like to run a scrappy start-up, a high-growth scale-up, a
 
 ![Two lighthouses lighting one spot from two directions](/assets/twin.png){.img-right}
 
-At Deliveroo, JP joined Mike’s platform organisation and together they built a repeatable pattern for systemic change across a fast-growing tech company. It was not only about developer tooling and platforms — they reshaped hiring models, consolidated disparate technologies, and pulled off groundbreaking scale migrations that later became AWS case studies. They introduced frameworks to weigh risk reduction against product growth, ran cost-reduction programmes that elevated capability instead of cutting corners, and created the conditions for technology to scale sustainably.
+At Deliveroo, JP joined Mike’s platform organisation and together we built a repeatable pattern for systemic change across a fast-growing tech company. It was not only about developer tooling and platforms — we reshaped hiring models, consolidated disparate technologies, and pulled off groundbreaking scale migrations that later became AWS case studies. We introduced frameworks to weigh risk reduction against product growth, ran cost-reduction programmes that elevated capability instead of cutting corners, and created the conditions for technology to scale sustainably.
 
-In short,  through  a broader combined skillset, low ego, and high-functioning collaboration and some unusually high eq they became disproportionately impactful as a team, delivering extraordinary change in scale-up environments? 
+In short,  through  a broader combined skillset, low ego, and high-functioning collaboration and some unusually high EQ we've became disproportionately impactful as a team, delivering extraordinary change in scale-up environments? 
 
-Now, they seek work that gives them the same **joy**: high-stakes moments where their unusual experience makes the biggest difference. These are the moments they know best, the ones they love, and where they help leadership teams accelerate when it matters most.
+Now, we seek work that gives us the same **joy**: high-stakes moments where our unusual experience makes the biggest difference. These are the moments we know best, the ones we love, and where we help leadership teams accelerate when it matters most.
