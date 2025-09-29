@@ -50,5 +50,9 @@ mark {
 }
 
 .img-right {
-  @apply rounded-lg float-right my-4 ms-8 sm:max-w-1/6 w-24 max-w-1/4
+  @apply rounded-lg float-right max-w-1/3 my-4 ms-8;
+}
+
+.icon-right {
+  @apply float-right my-4 ms-8 sm:max-w-1/6 w-24 max-w-1/4;
 }
