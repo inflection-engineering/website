@@ -1,0 +1,46 @@
+---
+layout: with-navbar.njk
+---
+
+<div class="container mx-auto max-w-4xl px-4 py-8">
+    <h1 class="text-5xl mt-8 mb-24 font-bold text-base-content">{{ title }}</h1>
+    <div class="prose prose-lg max-w-none">
+        {{ content | safe }}
+    </div>
+</div>
+<!-- CTA Section -->
+<div class="hero bg-gradient-to-b from-base to-primary/20 py-16">
+    <div class="hero-content text-center">
+        <div class="max-w-2xl">
+            <h2 class="text-3xl font-bold mb-4">Still got questions?</h2>
+            <p class="text-lg text-base-content/80 mb-6">
+                You read this far — what caught your eye? Let's talk it through.
+            </p>
+            <a
+                class="btn btn-accent"
+                href="mailto:hello@inflection.engineering?body=Hi%20folks,%0A%0A"
+                onclick="get_in_touch.showModal(); event.preventDefault();">Get in touch</a>
+        </div>
+    </div>
+</div>
+<!-- Related Case Studies -->
+<div class="bg-primary/20 py-16">
+    <div class="container mx-auto max-w-6xl px-4">
+        <h2 class="text-3xl font-bold text-center mb-12">More Case Studies</h2>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {% for study in collections.caseStudies | limit(3) %}
+                {% if study.url != page.url %}
+                    <div class="card bg-base-100 shadow-lg">
+                        <div class="card-body">
+                            <h3 class="card-title text-lg">{{ study.data.title }}</h3>
+                            <p class="text-base-content/80 line-clamp-3">{{ study.data.summary }}</p>
+                            <div class="card-actions justify-end mt-4">
+                                <a href="{{ study.url }}" class="btn btn-primary btn-sm">Read more &raquo;</a>
+                            </div>
+                        </div>
+                    </div>
+                {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+</div>

@@ -1,0 +1,27 @@
+---
+layout: base.njk
+---
+
+<div class="navbar sticky top-0 z-50 bg-base-100 border-b border-base-300">
+  <div class="navbar-start">
+    <a href="/" class="btn btn-ghost text-xl">
+      <img src="/assets/logo.png" alt="Inflection Engineering" class="h-8"/>
+    </a>
+  </div>
+  <div class="navbar-end">
+    <a href="/pages/why-us" class="btn btn-ghost">Why us?</a>
+    <a href="#" onclick="get_in_touch.showModal()" class="btn btn-accent btn-soft">Get in touch</a>
+  </div>
+</div>
+{{ content | safe }}
+{% include "get_in_touch.njk" %}
+<!-- Footer -->
+<footer class="footer footer-center p-10 text-base-content bg-gradient-to-b from-primary/20 to-base ">
+  <div class="flex items-center justify-between gap-4">
+    <img src="/assets/logo.png" alt="Inflection Engineering" class="h-12"/>
+    <div class="text-left">
+      <p class="text-base-content/75">Helping CTOs adapt faster, when it matters most.</p>
+      <p class="text-base-content/25">Inflection Engineering &copy; 2024-{{ "now" | date("YYYY") }}</p>
+    </div>
+  </div>
+</footer>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth" data-theme="inflection">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            {% if title %}
+                {{ title }} —
+            {% endif %}Inflection Engineering</title>
+        {% if description %}
+            <meta name="description" content="{{ description }}">
+        {% endif %}
+        <meta name="theme-color" content="#000e1e"/>
+        <link rel="stylesheet" href="/assets/main.bundle.css">
+        <script src="/assets/main.bundle.js" defer></script>
+    </head>
+    <body class="bg-base-100 blueprint">
+        {{ content | safe }}
+        <div class="fab">
+            <div tabindex="0" role="button" class="btn btn-lg btn-circle btn-accent">
+                <svg aria-label="New" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 16 16" fill="currentColor" class="size-6">
+                    <path d="M8.75 3.75a.75.75 0 0 0-1.5 0v3.5h-3.5a.75.75 0 0 0 0 1.5h3.5v3.5a.75.75 0 0 0 1.5 0v-3.5h3.5a.75.75 0 0 0
+                    0-1.5h-3.5v-3.5Z"/>
+                </svg>
+            </div>
+            <div class="fab-close">
+                <span class="btn btn-circle btn-lg hover:text-accent">✕</span>
+            </div>
+            <div class="hover:text-accent">
+                <span class="bg-base-100/85 px-4 py-2 rounded-md">Message us</span>
+                <a href="mailto:hello@inflection.engineering" class="btn btn-lg btn-circle btn-primary hover:btn-accent">
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewbox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        class="size-6">
+                        <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25
+                                2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0
+                                1-1.07-1.916V6.75"/>
+                    </svg>
+                </a>
+            </div>
+            <div class="hover:text-accent">
+                <span class="bg-base-100/85 px-4 py-2 rounded-md">Meet with us</span>
+                <a href="https://inflection.engineering/meet/us" class="btn btn-lg btn-circle btn-primary hover:btn-accent">
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewbox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        class="size-6">
+                        <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="m15.75 10.5 4.72-4.72a.75.75 0 0 1 1.28.53v11.38a.75.75 0 0 1-1.28.53l-4.72-4.72M4.5 18.75h9a2.25 2.25 0 0 0
+                                2.25-2.25v-9a2.25 2.25 0 0 0-2.25-2.25h-9A2.25 2.25 0 0 0 2.25 7.5v9a2.25 2.25 0 0 0 2.25 2.25Z"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </body>
+</html>

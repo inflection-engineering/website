@@ -1,0 +1,46 @@
+---
+layout: base.njk
+---
+
+<!-- Hero Section -->
+<div class="hero p-8 md:p-32 bg-gradient-to-b from-primary/50 to-bg">
+  <div class="hero-content text-center text-balance">
+    <div class="w-full lg:max-w-md">
+      <img src="/assets/logo.png" alt="Inflection Engineering" class="w-80 mx-auto object-contain m-4"/>
+      <p class="py-0 my-2 italic">Helping CTOs adapt faster, when it matters most.</p>
+      <p class="mt-12">We help scale-ups adapt faster when success starts to slow them down. You're already in the race of
+        your life — we're the boost that gets you back on track.</p>
+      <div class="mt-12">
+        <a
+          class="btn btn-soft btn-accent"
+          href="mailto:hello@inflection.engineering?body=Hi%20folks,%0A%0A"
+          onclick="get_in_touch.showModal(); event.preventDefault();">Get in touch</a>
+        <a class="btn btn-ghost" href="#why-us">Learn more ↓</a>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Carousel -->
+<section class="py-16 w-full">
+  <div class="carousel carousel-center w-full gap-[20%]">
+    {% for item in collections.homepageCarousel %}
+      <div id="{{ item.fileSlug | removeNumberPrefix }}" class="carousel-item relative w-3/4 card rounded-lg bg-primary/25 {% if loop.first %}ms-[20%]{% endif %}{% if loop.last %} me-[20%]{% endif %}">
+        <div class="card-body text-base flex-none">
+          <h3 class="card-title mt-0 mb-4">{{ item.data.title }}</h3>
+          {{ item.content | safe }}
+          <a class="btn btn-primary w-64 self-end" href="{{ item.data.cta.link }}">{{ item.data.cta.title }} &raquo;</a>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+  <div class="flex w-full justify-center gap-4 py-4">
+    {% for item in collections.homepageCarousel %}
+      <a href="#{{ item.fileSlug | removeNumberPrefix }}" class="btn btn-xs">{{ item.data.title }}</a>
+    {% endfor %}
+  </div>
+</section>
+{% include "get_in_touch.njk" %}
+<!-- Footer -->
+<footer class="footer footer-center p-10 text-base-content">
+  <p class="text-base-content/45">Inflection Engineering &copy; 2024-{{ "now" | date("YYYY") }}</p>
+</footer>
