@@ -30,7 +30,7 @@ Along the way he learned how to adjust his style to each phase: from principal e
 
 ![Mike](/assets/mike.png){.img-right}
 
-Mike brings an infrastructure-first lens shaped by decades of scale-up leadership. Part of the founding team that built that Demon Internet, the UK’s first consumer ISP and turned Redbus Interhouse from a spreadsheet into a funded business that revolutionised the UK data centre market; steered companies through acquisitions; navigated sales, funding rounds and multiple IPOs.  Mike has told the board it was time, and closed the doors. 
+Mike brings an infrastructure-first lens shaped by decades of scale-up leadership. A Central part of the leadership team that built that Demon Internet, the UK’s first consumer ISP; Co-founded Redbus Interhouse, building a spreadsheet into a funded business that revolutionised the UK data centre market; steered companies through acquisitions; navigated sales, funding rounds and multiple IPOs.  Mike has told the board it was time, and closed the doors. 
 
 He’s led teams owning key tools in the security and developer workflows ensuring they performed at Facebook scale, and has persuaded start-up engineers to go on call for the first time — ill-prepared and nervous, but confident because he had their back. 
 
