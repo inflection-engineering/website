@@ -33,7 +33,7 @@ Everything you’ve ever read tells you to avoid doing migrations this way, *if 
 Gradual cutover proved extremely challenging; only a big-bang migration would work. The team spent four months hardening the approach, test harnesses, repeated dry runs, AWS engineers ride-along. The engineers focused on the technical challenge; Mike supported this work but focused on ensuring the entire tech org was ready to move when the team was.
 
 
-The leadership team was deeply technical and constantly probing for unseen shortcuts.  Gantt chants and slide decks were not going to cut it. To shield the engineers, Mike built deep technical understanding. He used it to give leadership confidence in the detail, while also listening for unaddressed concerns and making sure the team heard what mattered. This pattern of demonstrably distilling data flow in both directions is a repeating pattern in our work, and part of why we're different. 
+The leadership team was deeply technical and constantly probing for unseen shortcuts.  Gantt charts and slide decks were not going to cut it. To shield the engineers, Mike built deep technical understanding. He used it to give leadership confidence in the detail, while also listening for unaddressed concerns and making sure the team heard what mattered. This pattern of demonstrably distilling data flow in both directions is a repeating pattern in our work, and part of why we're different. 
 
 By the time the switch came, the organisation wasn’t just aware — it was already moving in step with the team. The migration landed cleanly because the ground had been prepared for it.
 
