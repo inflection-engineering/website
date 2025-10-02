@@ -7,4 +7,4 @@ cta:
 
 At a SaaS scale-up, growth was pressing. The client knew exactly what was needed: a significant expansion of engineering headcount. The gap was in execution capacity and rigour with few interviewers, no consistent process, and little experience of hiring at scale. The likely outcome was failure to hire fast enough, or hiring badly.
 
-We built the plan with them, then executed it alongside them aligned to their goals but without demanding their minute-to-minute involvement. Running loops, refining scripts, training interviewers, and onboarding tools, we gave them space to focus on other priorities while building their organisation’s own capacity to hire at scale.
+We built the plan with them, then executed it alongside them, aligned to their goals but without demanding their minute-to-minute involvement. Running loops, refining scripts, training interviewers, and onboarding tools, we gave them space to focus on other priorities while building their organisation’s own capacity to hire at scale.
