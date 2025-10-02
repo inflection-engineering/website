@@ -8,7 +8,7 @@ title: Why us?
 
 ![A venn diagram showing three segments — Great at it, Love it, You need it — with the intersection being: Inflection Engineering.](/assets/bad-venn.png){.img-right}
 
-We’ve learned we’re at our best in inflection points;  those high-stakes moments where systems strain, leadership is stretched, and what worked yesterday no longer holds.
+We’ve learned we’re at our best in inflection points, those high-stakes moments where systems strain, leadership is stretched, and what worked yesterday no longer holds.
 
 For us this isn’t theory. It’s the work we’ve lived, the work we love, and the work we now choose to optimise our careers around. Think of it as a sweet spot: what we’re great at, what gives us energy, and what your business most needs.
 
