@@ -44,6 +44,6 @@ Mike knows what it looks like to run a scrappy start-up, a high-growth scale-up,
 
 At Deliveroo, JP joined Mike’s platform organisation and together we built a repeatable pattern for systemic change across a fast-growing tech company. It was not only about developer tooling and platforms, we reshaped hiring models, consolidated disparate technologies, and pulled off groundbreaking scale migrations that later became AWS case studies. We introduced frameworks to weigh risk reduction against product growth, ran cost-reduction programmes that elevated capability instead of cutting corners, and created the conditions for technology to scale sustainably.
 
-In short,  through  a broader combined skillset, low ego, and high-functioning collaboration and some unusually high EQ we've became disproportionately impactful as a team, delivering extraordinary change in scale-up environments? 
+In short,  through  a broader combined skillset, low ego, and high-functioning collaboration and some unusually high EQ we've become disproportionately impactful as a team, delivering extraordinary change in scale-up environments? 
 
 Now, we seek work that gives us the same **joy**: high-stakes moments where our unusual experience makes the biggest difference. These are the moments we know best, the ones we love, and where we help leadership teams accelerate when it matters most.
