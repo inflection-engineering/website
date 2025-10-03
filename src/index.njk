@@ -28,7 +28,7 @@ layout: base.njk
         <div class="card-body text-base flex-none">
           <h3 class="card-title mt-0 mb-4">{{ item.data.title }}</h3>
           {{ item.content | safe }}
-          <a class="btn btn-primary w-64 self-end" href="{{ item.data.cta.link }}">{{ item.data.cta.title }} &raquo;</a>
+          <a class="btn btn-primary w-32 max-w-full self-end" href="{{ item.data.cta.link }}">{{ item.data.cta.title }} &raquo;</a>
         </div>
       </div>
     {% endfor %}
