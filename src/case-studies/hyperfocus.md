@@ -1,14 +1,14 @@
 ---
 layout: case-study.njk
 title: Hyperfocus
-summary: Gave reliability work the same visibility and priority as features, ending the cycle of recurring incidents across 50+ product teams. 
+summary: Gave reliability work the same visibility and priority as product features, ending the cycle of recurring incidents across 50+ product teams. 
 ---
 
 ## Context
 
 ![Context](/assets/context.svg){.icon-right}
 
-The company’s  50+ product teams could explain features with business cases and metrics, but reliability work was invisible. Product leaders lacked a way to show impact, so incidents recurred and board questions grew about whether the organisation had maturity to manage stability. The whole org needed a consistent pattern for when reliability must take priority.
+The company’s  50+ product teams could explain product features with business cases and metrics, but reliability work was invisible. Product leaders lacked a way to show impact, so incidents recurred and board questions grew about whether the organisation had maturity to manage stability. The whole org needed a consistent pattern for when reliability must take priority.
 
 ---
 
