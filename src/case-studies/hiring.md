@@ -24,7 +24,7 @@ We anchored workshops around three hard questions:
 \- **Where will they come from?** Agencies, agreements, targeting.
 \- **How will we choose?** Interview framework, rigour, decisions, capacity.
 
-Once agreed, we acted autonomously updating only at key decision points while iterating the plan as new market data arrived
+Once agreed, we acted autonomously updating only at key decision points while iterating the plan as new market data arrived.
 
 ---
 
