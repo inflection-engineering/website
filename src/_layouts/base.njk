@@ -13,18 +13,22 @@
         <meta name="theme-color" content="#000e1e"/>
         <link rel="stylesheet" href="/assets/main.bundle.css">
         <script src="/assets/main.bundle.js" defer></script>
-	<!-- Privacy-friendly analytics by Plausible -->
-	<script async src="https://plausible.io/js/pa-iRhqIeSvpfMZn46WWEgCD.js"></script>
-	<script>
-  		window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};
-  		plausible.init()
-	</script>
-
+        <!-- Privacy-friendly analytics by Plausible -->
+        <script async src="https://plausible.io/js/pa-iRhqIeSvpfMZn46WWEgCD.js"></script>
+        <script>
+            window.plausible = window.plausible || function () {
+                (plausible.q = plausible.q || []).push(arguments)
+            },
+            plausible.init = plausible.init || function (i) {
+                plausible.o = i || {}
+            };
+            plausible.init()
+        </script>
     </head>
     <body class="bg-base-100 blueprint">
         {{ content | safe }}
         <div class="fab">
-            <div tabindex="0" role="button" class="btn btn-lg btn-circle btn-accent">
+            <div tabindex="0" role="button" class="btn btn-lg btn-circle btn-accent plausible-event-name=ExpandFAB">
                 <svg aria-label="New" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 16 16" fill="currentColor" class="size-6">
                     <path d="M8.75 3.75a.75.75 0 0 0-1.5 0v3.5h-3.5a.75.75 0 0 0 0 1.5h3.5v3.5a.75.75 0 0 0 1.5 0v-3.5h3.5a.75.75 0 0 0
                     0-1.5h-3.5v-3.5Z"/>
@@ -34,7 +38,7 @@
                 <span class="btn btn-circle btn-lg hover:text-accent">✕</span>
             </div>
             <div class="hover:text-accent">
-                <span class="bg-base-100/85 px-4 py-2 rounded-md">Message us</span>
+                <span class="bg-base-100/85 px-4 py-2 rounded-md plausible-event-name=SendEmail">Message us</span>
                 <a href="mailto:hello@inflection.engineering" class="btn btn-lg btn-circle btn-primary hover:btn-accent">
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -53,7 +57,7 @@
                 </a>
             </div>
             <div class="hover:text-accent">
-                <span class="bg-base-100/85 px-4 py-2 rounded-md">Meet with us</span>
+                <span class="bg-base-100/85 px-4 py-2 rounded-md plausible-event-name=RequestMeeting">Meet with us</span>
                 <a href="https://inflection.engineering/meet/theteam" class="btn btn-lg btn-circle btn-primary hover:btn-accent">
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
