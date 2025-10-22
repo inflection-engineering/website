@@ -24,7 +24,7 @@ layout: base.njk
 <section class="py-16 w-full">
   <div class="flex w-16 md:w-full mx-auto justify-center gap-4 py-4 md:hidden">
     {% for item in collections.homepageCarousel %}
-      <a href="#{{ item.fileSlug | removeNumberPrefix }}" class="btn btn-xs">{{ loop.index }}</a>
+      <a href="#{{ item.fileSlug | removeNumberPrefix }}" class="btn btn-sm">{{ loop.index }}</a>
     {% endfor %}
   </div>
   <div class="relative">
@@ -58,7 +58,7 @@ layout: base.njk
   </div>
   <div class="hidden md:flex w-full mx-auto justify-center gap-4 py-4">
     {% for item in collections.homepageCarousel %}
-      <a href="#{{ item.fileSlug | removeNumberPrefix }}" class="btn btn-xs">{{ item.data.title }}</a>
+      <a href="#{{ item.fileSlug | removeNumberPrefix }}" class="btn btn-sm">{{ item.data.title }}</a>
     {% endfor %}
   </div>
 </section>
