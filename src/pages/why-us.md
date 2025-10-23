@@ -19,8 +19,6 @@ This is what we're built for: the high-stakes inflection points where the right 
   <a href="#what-jp-brings" class="btn btn-soft btn-primary btn-sm">JP</a>
 </div>
 
----
-
 ## What JP brings
 
 ![JP](/assets/JP.png){.img-right}
@@ -61,11 +59,11 @@ When Mike's involved, you sleep better. The migration will work. The decision is
 
 ![Two lighthouses lighting one spot from two directions](/assets/twin.png){.img-right}
 
-At Deliveroo, we built a repeating pattern: identify the _systemic_ problem, align the organisation, execute the change, leave it working and self-healing.
+Across our careers we've built a repeating pattern: identify the _systemic_ problem, align the organisation, execute the change, leave it working and self-healing.
 
-**We migrated Kafka with zero customer impact** — 40+ teams, 30k messages/second, no downtime. AWS turned it into their playbook. **We stopped recurring incidents** by making reliability work as visible as features. **We hired 85% of open roles** and left a trained team to scale it. **We never slowed product velocity** to do any of it.
+**We've migrated Kafka with zero customer impact** — 40+ teams, 30k messages/second, no downtime. AWS turned it into their playbook. **We've stopped recurring incidents** by making reliability work as visible as features. **We've built hiring pipelines, used them** and left a trained team to scale it. **And we've helped _increase_ product velocity** while we did it.
 
-This gave leadership their weekends back. Board questions became easier to answer. The 3am escalations stopped.
+Each time, we gave leadership their weekends back. Board questions became easier to answer. Sleeping-hours escalations went quiet.
 
 Together, we're more effective than separately:
 
