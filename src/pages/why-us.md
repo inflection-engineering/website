@@ -7,9 +7,9 @@ title: How we help
 
 Your systems are strained. Your team is stretched. What worked six months ago doesn't scale to the next six.
 
-Fighting fires all day leaves **no time for strategy**. We've fought these fires before — we land running, take problems off your hands, resolve them, _and_ grow your team so you don't need to step in again.
+Fighting fires all day leaves **no time for strategy**.
 
-We work in **fixed engagements**. We solve the immediate crisis. We transfer knowledge. We don't stay longer than we're needed.
+We land running and take problems off your hands. We resolve them, grow your team to handle the next time, then leave.
 
 This is what we're built for: the high-stakes inflection points where the right partner makes all the difference.
 
@@ -35,7 +35,7 @@ He was Deliveroo's principal engineer, influencing the 1,800 tech organisation a
 
 **He moves fast, and unbreaks things.** Whether the single code-line prototype for Deliveroo Plus, [hiring 85% of roles in a scale-up](/case-studies/hiring/), or coaching senior staff engineers on building products like a business _owner_.
 
-JP adapts to what you need: strategic leader, hands-on engineer, experienced coach.
+With JP, the pressure lifts. Board questions get clearer answers. Your team grows without you holding every hand. The architecture decisions land right, first time.
 
 ---
 
@@ -53,7 +53,7 @@ He's been central to leadership teams at _Demon Internet_ (UK's first consumer I
 
 **He's closed the doors.** Mike has told boards when it was time to shut down. He's navigated acquisitions, funding rounds, IPOs. He knows what real stakes look like.
 
-Mike gives you confidence: in the migration, the architecture decision, the midnight incident response.
+When Mike's involved, you sleep better. The migration will work. The decision is sound. The 3am incident won't be yours to handle.
 
 ---
 
@@ -61,16 +61,18 @@ Mike gives you confidence: in the migration, the architecture decision, the midn
 
 ![Two lighthouses lighting one spot from two directions](/assets/twin.png){.img-right}
 
-At Deliveroo, we built a repeating pattern that works: identify the _systemic_ problem, align the organisation, execute the change, leave it working and self-healing.
+At Deliveroo, we built a repeating pattern: identify the _systemic_ problem, align the organisation, execute the change, leave it working and self-healing.
 
 **We migrated Kafka with zero customer impact** — 40+ teams, 30k messages/second, no downtime. AWS turned it into their playbook. **We stopped recurring incidents** by making reliability work as visible as features. **We hired 85% of open roles** and left a trained team to scale it. **We never slowed product velocity** to do any of it.
 
+This gave leadership their weekends back. Board questions became easier to answer. The 3am escalations stopped.
+
 Together, we're more effective than separately:
 
-**Broader range.** Product + infrastructure. Org design + execution. Engineering strategy + hands-on delivery.
+**Broader range** means more you could delegate to us. Product + infrastructure. Org design + execution. Engineering strategy + hands-on delivery.
 
-**Faster trust.** One of us earns credibility with engineers, the other with leadership. We translate in both directions.
+**Faster trust** means less time setting us up. One of us earns credibility with engineers, the other with leadership. We translate in both directions.
 
-**Lower risk.** We've worked through crises together. We know each other's judgment. You get a team that's already aligned.
+**Lower risk** gives you peace of mind, faster. We've worked through crises together. We know each other's judgment. You get a team that's already aligned.
 
 You're not hiring two contractors. You're getting a **unit that's solved problems like yours before**.
