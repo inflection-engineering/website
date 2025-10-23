@@ -1,49 +1,76 @@
 ---
 layout: case-study.njk
-title: Why us?
+title: How we help
 ---
 
+## You have too many plates spinning
 
-## We've done this before
+Your systems are strained. Your team is stretched. What worked six months ago doesn't scale to the next six.
 
-![A venn diagram showing three segments — Great at it, Love it, You need it — with the intersection being: Inflection Engineering.](/assets/bad-venn.png){.img-right}
+Fighting fires all day leaves **no time for strategy**.
 
-We’ve learned we’re at our best in inflection points, those high-stakes moments where systems strain, leadership is stretched, and what worked yesterday no longer holds.
+We land running and take problems off your hands. We resolve them, grow your team to handle the next time, then leave.
 
-For us this isn’t theory. It’s the work we’ve lived, the work we love, and the work we now choose to optimise our careers around. Think of it as a sweet spot: what we’re great at, what gives us energy, and what your business most needs.
+This is what we're built for: the high-stakes inflection points where the right partner makes all the difference.
 
-That’s what _Inflection Engineering_ means,  leaning into complex challenges not as a burden, but as the place we do our best work.
+<div class="flex gap-4 my-8 justify-center md:sticky md:top-0 md:z-100 md:py-4 md:-mx-4 md:px-4">
+  <a href="#what-mike-brings" class="btn btn-soft btn-primary btn-sm">Mike</a>
+  <a href="#why-we-work-as-a-team" class="btn btn-soft btn-accent btn-sm">Us together</a>
+  <a href="#what-jp-brings" class="btn btn-soft btn-primary btn-sm">JP</a>
+</div>
 
----
-
-## Who is JP?
+## What JP brings
 
 ![JP](/assets/JP.png){.img-right}
 
-JP’s major chops come from Deliveroo. He joined in the early days and lived every stage of the journey funding, hypergrowth, IPO readiness, and the shift to profitability.
+JP scales **organisations and engineering products** under pressure.
 
-Along the way he learned how to adjust his style to each phase: from principal engineer influencing an 1,800-strong organisation, to the coder roughing out a fix in the middle of the night. He is strategic when working on hiring plans and architecture reviews, a coach helping ICs and managers grow, and a maverick when coding for a NASA challenge on a shoestring budget. He knows the strain of scaling teams, aligning leadership, and shipping product under relentless pressure.
+He was Deliveroo's principal engineer, influencing the 1,800 tech organisation across 50+ teams. He led engineering teams in marketing, growth, payments, and infrastructure for over 9 years; as the company grew from 6 engineers to 600, through funding rounds, hypergrowth, IPO prep, and to profitability.
+
+**He makes reliability prioritisable.** When incidents kept recurring, JP created [Hyperfocus](/case-studies/hyperfocus/) — a framework that gave reliability work the same weight as features and ended the cycle of fire-fighting.
+
+**He builds systems that scale.** JP architected Deliveroo's _distributed experimentation platform_ (hundreds of experiments, zero blast radius), their _event-sourced payments system_ (optimised for cost at massive scale), and blinkbox' _book ingestion platform_ (turning daily snapshots of 500k ebooks into concise delta events that drove everything from push notifications to their physical ebook reader).
+
+**He moves fast, and unbreaks things.** Whether the single code-line prototype for Deliveroo Plus, [hiring 85% of roles in a scale-up](/case-studies/hiring/), or coaching senior staff engineers on building products like a business _owner_.
+
+With JP, the pressure lifts. Board questions get clearer answers. Your team grows without you holding every hand. The architecture decisions land right, first time.
 
 ---
 
-## Who is Mike?
+## What Mike brings
 
 ![Mike](/assets/mike.png){.img-right}
 
-Mike brings an infrastructure-first lens shaped by decades of scale-up leadership. A Central part of the leadership team that built that Demon Internet, the UK’s first consumer ISP; Co-founded Redbus Interhouse, building a spreadsheet into a funded business that revolutionised the UK data centre market; steered companies through acquisitions; navigated sales, funding rounds and multiple IPOs.  Mike has told the board it was time, and closed the doors. 
+Mike keeps **infrastructure reliable** and **coaches leadership** through the decisions that matter most.
 
-He’s led teams owning key tools in the security and developer workflows ensuring they performed at Facebook scale, and has persuaded start-up engineers to go on call for the first time — ill-prepared and nervous, but confident because he had their back. 
+He's been central to leadership teams at _Demon Internet_ (UK's first consumer ISP), _Redbus Interhouse_ (revolutionising UK data centres), and platform teams at _Facebook_ and _Deliveroo_. He's told boards when it was time to shut down, navigated acquisitions and IPOs, and given technical founders the faith they need to back big-bang migrations when gradual approaches wouldn't work.
 
-Mike knows what it looks like to run a scrappy start-up, a high-growth scale-up, and a global tech giant — and what it takes to keep systems reliable when complexity becomes the beast in the room.
+**He orchestrates impossible migrations.** Mike led a [zero-downtime Kafka migration](/case-studies/migration/) across 40+ teams and 30k messages/second — something the cloud provider said had never been done. It became their playbook.
+
+**He shields engineers while earning leadership trust.** Mike distills technical depth into clarity for boards, and translates business constraints into actionable plans for teams.
+
+**He's closed the doors.** Mike has told boards when it was time to shut down. He's navigated acquisitions, funding rounds, IPOs. He knows what real stakes look like.
+
+When Mike's involved, you sleep better. The migration will work. The decision is sound. The 3am incident won't be yours to handle.
 
 ---
 
-## Why a team?
+## Why we work as a team
 
 ![Two lighthouses lighting one spot from two directions](/assets/twin.png){.img-right}
 
-At Deliveroo, JP joined Mike’s platform organisation and together we built a repeatable pattern for systemic change across a fast-growing tech company. It was not only about developer tooling and platforms, we reshaped hiring models, consolidated disparate technologies, and pulled off groundbreaking scale migrations that later became AWS case studies. We introduced frameworks to weigh risk reduction against product growth, ran cost-reduction programmes that elevated capability instead of cutting corners, and created the conditions for technology to scale sustainably.
+Across our careers we've built a repeating pattern: identify the _systemic_ problem, align the organisation, execute the change, leave it working and self-healing.
 
-In short,  through  a broader combined skillset, low ego, and high-functioning collaboration and some unusually high EQ we've become disproportionately impactful as a team, delivering extraordinary change in scale-up environments? 
+**We've migrated Kafka with zero customer impact** — 40+ teams, 30k messages/second, no downtime. AWS turned it into their playbook. **We've stopped recurring incidents** by making reliability work as visible as features. **We've built hiring pipelines, used them** and left a trained team to scale it. **And we've helped _increase_ product velocity** while we did it.
 
-Now, we seek work that gives us the same **joy**: high-stakes moments where our unusual experience makes the biggest difference. These are the moments we know best, the ones we love, and where we help leadership teams accelerate when it matters most.
+Each time, we gave leadership their weekends back. Board questions became easier to answer. Sleeping-hours escalations went quiet.
+
+Together, we're more effective than separately:
+
+**Broader range** means more you could delegate to us. Product + infrastructure. Org design + execution. Engineering strategy + hands-on delivery.
+
+**Faster trust** means less time setting us up. One of us earns credibility with engineers, the other with leadership. We translate in both directions.
+
+**Lower risk** gives you peace of mind, faster. We've worked through crises together. We know each other's judgment. You get a team that's already aligned.
+
+You're not hiring two contractors. You're getting a **unit that's solved problems like yours before**.
