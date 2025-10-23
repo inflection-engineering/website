@@ -25,7 +25,7 @@ This is what we're built for: the high-stakes inflection points where the right 
 
 JP scales **organisations and engineering products** under pressure.
 
-He was Deliveroo's principal engineer, influencing the 1,800 tech organisation across 50+ teams. He led marketing, growth, payments, and infrastructure engineering teams over 9 years, as the company grew from 6 engineers to 600, through funding rounds, hypergrowth, IPO prep, and profitability.
+He was Deliveroo's principal engineer, influencing the 1,800 tech organisation across 50+ teams. He led engineering teams in marketing, growth, payments, and infrastructure for over 9 years; as the company grew from 6 engineers to 600, through funding rounds, hypergrowth, IPO prep, and to profitability.
 
 **He makes reliability prioritisable.** When incidents kept recurring, JP created [Hyperfocus](/case-studies/hyperfocus/) — a framework that gave reliability work the same weight as features and ended the cycle of fire-fighting.
 
