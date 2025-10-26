@@ -26,17 +26,33 @@ export default function(eleventyConfig) {
     const level = token.tag;
 
     // Get existing id and class attributes
-    const idAttr = token.attrGet('id');
+    let idAttr = token.attrGet('id');
     const classAttr = token.attrGet('class');
+
+    // If no id is set, generate one from the heading text
+    if (!idAttr) {
+      // Look ahead to the next token to get the heading text
+      const nextToken = tokens[idx + 1];
+      if (nextToken && nextToken.type === 'inline' && nextToken.content) {
+        // Convert heading text to a URL-friendly slug
+        idAttr = nextToken.content
+          .toLowerCase()
+          .replace(/[^\w\s-]/g, '') // Remove special characters
+          .replace(/\s+/g, '-')      // Replace spaces with hyphens
+          .replace(/-+/g, '-')       // Replace multiple hyphens with single hyphen
+          .trim();
+      }
+    }
+
     const idAttribute = idAttr ? ` id="${idAttr}"` : '';
 
     const defaultClasses = {
-      h1: 'text-4xl mb-6 mt-8',
-      h2: 'text-3xl mb-4 mt-8',
-      h3: 'text-2xl mb-3 mt-6',
-      h4: 'text-xl mb-2 mt-4',
-      h5: 'text-lg mb-2 mt-3',
-      h6: 'text-md mb-2 mt-2'
+      h1: 'text-4xl mb-6 mt-8 scroll-mt-24',
+      h2: 'text-3xl mb-4 mt-8 scroll-mt-24',
+      h3: 'text-2xl mb-3 mt-6 scroll-mt-24',
+      h4: 'text-xl mb-2 mt-4 scroll-mt-24',
+      h5: 'text-lg mb-2 mt-3 scroll-mt-24',
+      h6: 'text-md mb-2 mt-2 scroll-mt-24'
     };
 
     const allClasses = twMerge(
