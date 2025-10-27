@@ -3,6 +3,8 @@ title: "Why us?"
 cta:
   title: Learn more
   link: /pages/why-us
+summary: |
+  When you need a step change but lack the deputy to run with it, when firefighting steals your space to lead, or when opportunity demands swift action. We are your experienced operators ready to deliver. We'll help you build the plan, then execute it alongside you, freeing you to focus on what matters most.
 ---
 
 Sometimes your business needs a step change. You know what you need done, but you’re missing the great deputy who could run with it - you just haven’t the time to do this well alone. **This is where we deliver** as your disposable, experienced, safe-hands operators.

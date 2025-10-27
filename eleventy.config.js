@@ -140,6 +140,10 @@ export default function(eleventyConfig) {
   eleventyConfig.addFilter("removeNumberPrefix", function(slug) {
     return slug.replace(/^\d+-/, '');
   });
+
+  eleventyConfig.addFilter("markdown", function(content) {
+    return markdownLib.render(content);
+  });
   
   return {
     dir: {

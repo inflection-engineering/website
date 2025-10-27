@@ -3,7 +3,7 @@ layout: base.njk
 ---
 
 <!-- Hero Section -->
-<div class="hero p-8 md:p-16 bg-gradient-to-b from-primary/50 to-bg">
+<div class="hero md:p-8 md:p-16 bg-gradient-to-b from-primary/50 to-bg">
   <div class="hero-content text-center text-balance">
     <div class="w-full lg:max-w-md">
       <img src="/assets/logo.png" alt="Inflection Engineering" class="w-80 mx-auto object-contain m-4"/>
@@ -33,8 +33,9 @@ layout: base.njk
         <div id="{{ item.fileSlug | removeNumberPrefix }}" class="carousel-item relative w-3/4 card rounded-lg bg-primary/25 {% if loop.first %}ms-[20%]{% endif %}{% if loop.last %} me-[20%]{% endif %}">
           <div class="card-body text-base flex-none">
             <h3 class="card-title mt-0 mb-4">{{ item.data.title }}</h3>
-            {{ item.content | safe }}
-            <a class="btn btn-accent w-32 max-w-full self-end" href="{{ item.data.cta.link }}">{{ item.data.cta.title }} &raquo;</a>
+            <div class="hidden md:block">{{ item.content | safe }}</div>
+            <div class="block md:hidden">{{ item.data.summary | markdown | safe }}</div>
+            <a class="btn btn-accent w-full md:w-32 md:max-w-full md:self-end" href="{{ item.data.cta.link }}">{{ item.data.cta.title }} &raquo;</a>
           </div>
         </div>
       {% endfor %}
