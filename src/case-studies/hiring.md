@@ -1,7 +1,11 @@
 ---
 layout: case-study.njk
 title: Accelerating hiring
-summary: Built a complete hiring engine from scratch, delivering 85% of roles while training the team to scale autonomously. 
+summary: Built a complete hiring engine from scratch, delivering 85% of roles while training the team to scale autonomously.
+themes:
+  org: 5
+  strategy: 3
+  culture: 3
 ---
 
 ## Context
