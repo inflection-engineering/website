@@ -2,6 +2,10 @@
 layout: case-study.njk
 title: Hyperfocus
 summary: Gave reliability work the same visibility and priority as product features, ending the cycle of recurring incidents across 50+ product teams. 
+themes:
+  strategy: 3
+  culture: 3
+  org: 2
 ---
 
 ## Context

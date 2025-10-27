@@ -1,14 +1,18 @@
 ---
 layout: case-study.njk
 title: Difficult migration
-summary: Orchestrated a zero-downtime big-bang Kafka migration across 40+ teams that even the cloud provider adopted as their playbook. 
+summary: Orchestrated a zero-downtime big-bang Kafka migration across 40+ teams that even the cloud provider adopted as their playbook.
+themes:
+  tech: 5
+  ops: 4
+  strategy: 3
 ---
 
 ## Context
 
 ![Context](/assets/context.svg){.icon-right}
 
-A company’s self-hosted Kafka carried everything: orders, payments, riders, restaurants. It had been a quick escape from a failing inhouse tool, but was fragile, complex, and under-supported. A major incident exposed how thin operational knowledge had become. 
+A company’s self-hosted Kafka carried everything: orders, payments, riders, restaurants. It had been a quick escape from a failing inhouse tool, but was fragile, complex, and under-supported. A major incident exposed how thin operational knowledge had become.
 
 Migration to managed services was inevitable, but downtime wasn’t an option. No hot migration of this scale had ever been attempted, not even by the cloud provider. Mike had stepped into quite a challenge.
 

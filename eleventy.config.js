@@ -144,6 +144,29 @@ export default function(eleventyConfig) {
   eleventyConfig.addFilter("markdown", function(content) {
     return markdownLib.render(content);
   });
+
+  // Theme labels helper
+  eleventyConfig.addFilter("themeLabel", function(themeKey) {
+    const themeLabels = {
+      tech: '🛠️ Deep Tech & Systems',
+      strategy: '🎯 Strategy & Prioritisation',
+      org: '👥 Org Design & Leadership',
+      culture: '🏛️ Culture & Ownership',
+      ops: '📈 Inflection & Operating Model'
+    };
+
+    if (!themeLabels[themeKey]) {
+      throw new Error(`Unknown theme ${themeKey}`)
+    }
+
+    return themeLabels[themeKey];
+  });
+
+  // Get max theme value
+  eleventyConfig.addFilter("maxThemeValue", function(themes) {
+    if (!themes) return 0;
+    return Math.max(...Object.values(themes));
+  });
   
   return {
     dir: {
