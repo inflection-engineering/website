@@ -3,7 +3,17 @@ layout: with-navbar.njk
 ---
 
 <div class="container mx-auto max-w-4xl px-4 py-8">
-    <h1 class="text-5xl mt-8 mb-24 font-bold text-base-content">{{ title }}</h1>
+    <h1 class="text-5xl mt-8 mb-6 font-bold text-base-content">{{ title }}</h1>
+    {% if themes %}
+        {% set maxValue = themes | maxThemeValue %}
+        <div class="flex flex-wrap gap-2 mb-8">
+            {% for key, value in themes %}
+                <div class="badge badge-md badge-soft {% if value == maxValue %}badge-accent{% else %}badge-primary{% endif %} opacity-85">
+                    {{ key | themeLabel }}
+                </div>
+            {% endfor %}
+        </div>
+    {% endif %}
     <div class="prose prose-lg max-w-none">
         {{ content | safe }}
     </div>
